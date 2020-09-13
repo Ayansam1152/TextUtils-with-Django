@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template is working</title>
+</head>
+<body>
+    <form action="/about" method="post">
+        {% csrf_token %}
+        <h1 style="text-align-last: center;">Welcome to my text Analyzer. Write your text below in box!</h1>
+        <textarea style="margin: 0px; width: 1681px; text-align: center; height: 84px; font-size: x-large;" name="text" id="" cols="30" rows="10" placeholder="Enter your text"></textarea>
+        <input type="checkbox" name="removepunc">Removve Puctuation
+        <br>
+        <input type="checkbox" name="upper">UPPER CASE
+        <button style="/* justify-items: center; */display: block;margin: auto;" type="Submit">Aalyze text</button>
+
+    </form>
+</body>
+</html>
